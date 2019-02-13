@@ -1,0 +1,40 @@
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main-grid {
+    display: grid;
+    grid-template-rows: 20vh 10vh 100vh 30vh 100vh 10vh;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas: "banner banner" "nav nav" "primary primary" "shop shop" "secondary secondary" "footer footer"; }
+    .main-grid .banner {
+      grid-area: banner; }
+    .main-grid .nav {
+      grid-area: nav; }
+    .main-grid .primary {
+      grid-area: primary; }
+    .main-grid .shop-content {
+      grid-area: shop; }
+    .main-grid .secondary {
+      grid-area: secondary; }
+    .main-grid .footer {
+      grid-area: footer; } }
+body {
+  margin: 0; }
+
+.banner {
+  background-color: aqua; }
+
+.nav {
+  background-color: black; }
+
+.primary {
+  background-color: peru; }
+
+.shop-content {
+  background-color: yellowgreen; }
+
+.secondary {
+  background-color: palegreen; }
+
+.footer {
+  background-color: teal; }
+
+/*# sourceMappingURL=main.css.map */

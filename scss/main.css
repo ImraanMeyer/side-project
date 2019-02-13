@@ -1,0 +1,51 @@
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main-grid {
+    -ms-grid-rows: 20vh 10vh 50vh 30vh 50vh 10vh;
+        grid-template-rows: 20vh 10vh 50vh 30vh 50vh 10vh;
+    grid-auto-columns: 1fr 1fr;
+        grid-template-areas: "banner banner" "nav nav" "primary primary" "shop shop" "secondary secondary" "footer footer";
+  }
+  .main-grid .banner {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: banner;
+    background-color: aqua;
+  }
+  .main-grid .nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: nav;
+    background-color: black;
+  }
+  .main-grid .primary {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: primary;
+    background-color: maroon;
+  }
+  .main-grid .shop-content {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: shop;
+    background-color: yellowgreen;
+  }
+  .main-grid .secondary {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: secondary;
+    background-color: blue;
+  }
+  .main-grid .footer {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: footer;
+    background-color: teal;
+  }
+}
+/*# sourceMappingURL=main.css.map */
