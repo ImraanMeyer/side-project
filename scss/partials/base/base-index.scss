@@ -1,12 +1,23 @@
 body {
     margin: 0;
+    scroll-behavior: smooth;
+    ul {
+        margin: 0;
+    }
 }
 
 .banner {
-    background-color: aqua;
+    background: linear-gradient(aqua, white);
 }
-.nav {
+.navbar {
     background-color: black;
+    padding: 0.5em 0;
+    @include nav-display;
+}
+.navbar-is-success {
+    background-color: violet;
+    padding: 1.5em 0;
+    @include nav-display;
 }
 .primary {
     background-color: peru;

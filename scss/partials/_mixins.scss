@@ -1,0 +1,9 @@
+@mixin nav-display {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    transition: all 0.4s;   
+}

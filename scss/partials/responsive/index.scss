@@ -1,3 +1,23 @@
+// global grid areas for site //
+.banner {
+    grid-area: banner;
+}
+.navbar {
+    grid-area: nav;
+}
+.primary {
+    grid-area: primary; 
+}
+.shop-content {
+    grid-area: shop;
+}
+.secondary {
+    grid-area: secondary;
+}
+.footer {
+    grid-area: footer;
+}
+
 @media screen 
     and (min-device-width: 1200px) 
     and (max-device-width: 1600px) 
@@ -5,7 +25,7 @@
     
     .main-grid {
         display: grid;
-        grid-template-rows: 20vh 10vh 100vh 30vh 100vh 10vh;
+        grid-template-rows: 40vh auto 100vh 30vh 100vh 10vh;
         grid-auto-columns: 1fr 1fr;
         grid-template-areas: 
             "banner banner"
@@ -15,24 +35,6 @@
             "secondary secondary"
             "footer footer";
         
-            .banner {
-                grid-area: banner;
-            }
-            .nav {
-                grid-area: nav;
-            }
-            .primary {
-                grid-area: primary; 
-            }
-            .shop-content {
-                grid-area: shop;
-            }
-            .secondary {
-                grid-area: secondary;
-            }
-            .footer {
-                grid-area: footer;
-            }
         }
 
     }
