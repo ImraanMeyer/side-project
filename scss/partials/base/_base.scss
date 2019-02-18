@@ -1,1 +1,95 @@
-@import 'base-index.scss';
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #C9B1BD;
+    overflow: hidden;
+}
+
+img {
+    width: auto;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.main-grid {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 100vh;
+    grid-template-areas: 
+        "left right";
+
+    .aside {
+        width: 100%;
+    }
+    .left {
+        grid-area: left;
+        z-index: 2;
+    }
+    .right {
+        grid-area: right;
+        z-index: 2;
+    }
+}
+
+.image {
+    clip-path: polygon(0 0, calc(100% - 5vh) 0, calc(100% - 20vh) 100%, 0% 100%);
+}
+
+.text-pane {
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:auto auto auto auto auto 2.6em auto;
+    grid-template-areas: 
+        "header header"
+        "about  about"
+        "ess    ess"
+        "top    bottom"
+        "shoes  acc"
+        ". . "
+        "radio radio";
+
+    .title {
+        grid-area: header;
+    }
+    .info {
+        grid-area: about;
+    }
+    .essentials {
+        grid-area: ess;
+    }
+    .fashion-top {
+        grid-area: top;
+    }
+    .fashion-bottom {
+        grid-area: bottom;
+    }
+    .fashion-shoes {
+        grid-area: shoes;
+    }
+    .fashion-acc {
+        grid-area: acc;
+    }
+}
+
+.radio-right {
+    grid-area: radio;
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    border-radius: 50%;
+    text-decoration: none;
+    
+    button {
+    display: grid;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin: 0 1em;
+    height: 20px;
+    width: 20px;
+    }
+}

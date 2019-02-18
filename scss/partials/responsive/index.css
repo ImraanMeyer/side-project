@@ -1,35 +1,0 @@
-.banner {
-  grid-area: banner;
-}
-
-.navbar {
-  grid-area: nav;
-}
-
-.primary {
-  grid-area: primary;
-}
-
-.shop-content {
-  grid-area: shop;
-}
-
-.secondary {
-  grid-area: secondary;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  .main-grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 40vh auto 100vh 30vh 100vh 10vh;
-        grid-template-rows: 40vh auto 100vh 30vh 100vh 10vh;
-    grid-auto-columns: 1fr 1fr;
-        grid-template-areas: "banner banner" "nav nav" "primary primary" "shop shop" "secondary secondary" "footer footer";
-  }
-}
-/*# sourceMappingURL=index.css.map */
