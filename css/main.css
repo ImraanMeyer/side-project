@@ -2,7 +2,8 @@
 h1,
 p,
 * {
-  font-family: 'Poppins'; }
+  font-family: 'Poppins', 'Century Gothic';
+  color: #393e41; }
 
 body {
   margin: 0;
@@ -11,14 +12,14 @@ body {
   overflow: hidden; }
 
 img {
-  width: auto;
+  width: 100%;
   height: 100vh;
   max-width: 100%; }
 
 .main-grid {
   overflow: hidden;
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 100vh;
   grid-template-areas: "left right"; }
   .main-grid .aside {
@@ -30,17 +31,20 @@ img {
     grid-area: right;
     z-index: 2; }
 
-.image {
-  clip-path: polygon(0 0, calc(100% - 5vh) 0, calc(100% - 20vh) 100%, 0% 100%); }
+.left {
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10%) 100%, 0% 100%); }
+  .left img {
+    position: cover; }
 
 .text-pane {
-  padding: 0 1em;
+  padding: 50px;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto auto auto 2.6em auto;
+  grid-template-rows: auto auto auto auto auto 1.6em auto;
   grid-template-areas: "header header" "about  about" "ess    ess" "top    bottom" "shoes  acc" ". . " "radio radio"; }
   .text-pane .title {
-    grid-area: header; }
+    grid-area: header;
+    margin: 0; }
   .text-pane .info {
     grid-area: about; }
   .text-pane .essentials {
@@ -53,6 +57,30 @@ img {
     grid-area: shoes; }
   .text-pane .fashion-acc {
     grid-area: acc; }
+
+.text-pane {
+  padding: 100px 50px; }
+
+.title {
+  font-size: 4.4vw;
+  font-weight: 600; }
+
+.title::after {
+  content: '';
+  margin-top: 3.6vh;
+  background-color: #594157;
+  height: 0.60rem;
+  width: 100%;
+  display: block; }
+
+.info {
+  height: 50vh;
+  margin-top: 4vh;
+  padding: 1em;
+  background: #d5dfe57a;
+  border-bottom: #594157 solid 2vh; }
+  .info p {
+    font-size: 1.8vw; }
 
 .radio-right {
   grid-area: radio;
@@ -69,6 +97,15 @@ a {
     border: none;
     margin: 0 1em;
     height: 20px;
-    width: 20px; }
+    width: 20px;
+    background-color: #587b7f;
+    transition: all 0.1s;
+    color: #d5dfe5; }
+  a button:hover {
+    background-color: #594157;
+    transition: all 0.1s center; }
+  a button:active {
+    background-color: #d5dfe5;
+    color: #313e41; }
 
 /*# sourceMappingURL=main.css.map */

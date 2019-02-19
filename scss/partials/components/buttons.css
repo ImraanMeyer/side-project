@@ -1,0 +1,16 @@
+a {
+  margin: 0 6vw;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+a:hover {
+  color: tomato;
+}
+
+a:active {
+  color: teal;
+}
+/*# sourceMappingURL=buttons.css.map */

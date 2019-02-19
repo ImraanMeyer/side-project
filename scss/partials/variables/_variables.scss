@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+// global colors
 
-// global font styles
+$clear  :   #fff0;
+$white  :   #f5f5f5;
+$spec   :   #C9B1BD;
+$spec   :   #594157;
+$spec   :   #587b7f;
+$spec   :   #d5dfe5;
+$spec   :   #393e41;
+
+// global font styles fot the moment / try using serif respctfully
 h1,
 p,
 * {
-    font-family: 'Poppins';
-} 
+    font-family: 'Poppins', 'Century Gothic';
+    color: #393e41;
+}
+
+
+
+// global styles 
